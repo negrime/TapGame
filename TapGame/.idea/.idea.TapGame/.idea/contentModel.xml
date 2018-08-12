@@ -6,6 +6,7 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="CamFollow.cs" t="Include" />
+          <e p="Generator.cs" t="Include" />
           <e p="Move.cs" t="Include" />
         </e>
       </e>
@@ -17,6 +18,6 @@
         <e p="bin" t="ExcludeRecursive" />
       </e>
     </e>
-    <e p="$USER_HOME$/Library/Caches/Rider2018.1/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_TapGame.796977744.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.1/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_TapGame.1600418740.00" t="ExcludeRecursive" />
   </component>
 </project>

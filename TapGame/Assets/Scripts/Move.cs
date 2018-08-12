@@ -17,15 +17,18 @@ public class Move : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
+		
 
-		transform.Translate(speed * new Vector2(1,0) * Time.deltaTime, Space.World);
-		if (Input.GetKeyDown(KeyCode.Space))
+		transform.Translate(speed * new Vector2(-1,0) * Time.deltaTime, Space.World);
+		/*if (Input.GetKeyDown(KeyCode.Space))
 		{
 			rb.AddForce(Vector2.up * 300);
-		}
+		} 
+		*/
 		
 	}
 
+	
 	private void FixedUpdate()
 	{
 		//rb.velocity = speed * new Vector2(1, 0);
