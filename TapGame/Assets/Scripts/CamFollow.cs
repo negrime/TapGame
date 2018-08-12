@@ -20,6 +20,6 @@ public class CamFollow : MonoBehaviour
 
 	private void LateUpdate()
 	{
-		transform.position = new Vector3(target.position.x + 3, target.position.y + 3, target.position.z - 10);
+		transform.position = new Vector3(target.position.x + 3, target.position.y + 3.5f, target.position.z - 10);
 	}
 }
