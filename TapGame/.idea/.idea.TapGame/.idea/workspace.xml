@@ -14,15 +14,15 @@
       <file leaf-file-name="Move.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Move.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+            <state relative-caret-position="165">
+              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
               <folding>
-                <marker date="1534148820432" expanded="true" signature="6:101" ph="..." />
-                <marker date="1534148820432" expanded="true" signature="136:755" ph="{...}" />
-                <marker date="1534148820432" expanded="true" signature="337:435" ph="{...}" />
-                <marker date="1534148820432" expanded="true" signature="489:671" ph="{...}" />
-                <marker date="1534148820432" expanded="true" signature="579:665" ph="/* if (Input.GetKeyDown(KeyCode.Space)) ... */" />
-                <marker date="1534148820432" expanded="true" signature="702:753" ph="{...}" />
+                <marker date="1534161708363" expanded="true" signature="6:101" ph="..." />
+                <marker date="1534161708363" expanded="true" signature="136:812" ph="{...}" />
+                <marker date="1534161708363" expanded="true" signature="271:334" ph="{...}" />
+                <marker date="1534161708363" expanded="true" signature="413:548" ph="{...}" />
+                <marker date="1534161708363" expanded="true" signature="602:807" ph="{...}" />
+                <marker date="1534161708363" expanded="true" signature="718:804" ph="/* if (Input.GetKeyDown(KeyCode.Space)) ... */" />
               </folding>
             </state>
           </provider>
@@ -49,12 +49,12 @@
       <file leaf-file-name="CamFollow.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/CamFollow.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            <state relative-caret-position="120">
+              <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
               <folding>
-                <marker date="1534148623705" expanded="true" signature="6:100" ph="..." />
-                <marker date="1534148623705" expanded="true" signature="140:316" ph="{...}" />
-                <marker date="1534148623705" expanded="true" signature="199:314" ph="{...}" />
+                <marker date="1534161502204" expanded="true" signature="6:100" ph="..." />
+                <marker date="1534161502204" expanded="true" signature="140:355" ph="{...}" />
+                <marker date="1534161502204" expanded="true" signature="218:353" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -136,12 +136,12 @@
       <option name="presentableId" value="Default" />
       <updated>1534100554352</updated>
       <workItem from="1534100560608" duration="2165000" />
-      <workItem from="1534111247486" duration="2588000" />
+      <workItem from="1534111247486" duration="3837000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4753000" />
+    <option name="totallyTimeSpent" value="6002000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -186,9 +186,9 @@
         <state relative-caret-position="300">
           <caret line="22" column="85" selection-start-line="22" selection-start-column="85" selection-end-line="22" selection-end-column="85" />
           <folding>
-            <marker date="1534148623705" expanded="true" signature="6:100" ph="..." />
-            <marker date="1534148623705" expanded="true" signature="140:316" ph="{...}" />
-            <marker date="1534148623705" expanded="true" signature="199:314" ph="{...}" />
+            <marker date="1534161502204" expanded="true" signature="6:100" ph="..." />
+            <marker date="1534161502204" expanded="true" signature="140:355" ph="{...}" />
+            <marker date="1534161502204" expanded="true" signature="218:353" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -198,12 +198,24 @@
         <state relative-caret-position="270">
           <caret line="20" column="82" selection-start-line="20" selection-start-column="82" selection-end-line="20" selection-end-column="82" />
           <folding>
-            <marker date="1534148820432" expanded="true" signature="6:101" ph="..." />
-            <marker date="1534148820432" expanded="true" signature="136:755" ph="{...}" />
-            <marker date="1534148820432" expanded="true" signature="337:435" ph="{...}" />
-            <marker date="1534148820432" expanded="true" signature="489:671" ph="{...}" />
-            <marker date="1534148820432" expanded="true" signature="579:665" ph="/* if (Input.GetKeyDown(KeyCode.Space)) ... */" />
-            <marker date="1534148820432" expanded="true" signature="702:753" ph="{...}" />
+            <marker date="1534161708363" expanded="true" signature="6:101" ph="..." />
+            <marker date="1534161708363" expanded="true" signature="136:812" ph="{...}" />
+            <marker date="1534161708363" expanded="true" signature="271:334" ph="{...}" />
+            <marker date="1534161708363" expanded="true" signature="413:548" ph="{...}" />
+            <marker date="1534161708363" expanded="true" signature="602:807" ph="{...}" />
+            <marker date="1534161708363" expanded="true" signature="718:804" ph="/* if (Input.GetKeyDown(KeyCode.Space)) ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CamFollow.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding>
+            <marker date="1534161502204" expanded="true" signature="6:100" ph="..." />
+            <marker date="1534161502204" expanded="true" signature="140:355" ph="{...}" />
+            <marker date="1534161502204" expanded="true" signature="218:353" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -224,29 +236,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CamFollow.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding>
-            <marker date="1534148623705" expanded="true" signature="6:100" ph="..." />
-            <marker date="1534148623705" expanded="true" signature="140:316" ph="{...}" />
-            <marker date="1534148623705" expanded="true" signature="199:314" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Move.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        <state relative-caret-position="165">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
           <folding>
-            <marker date="1534148820432" expanded="true" signature="6:101" ph="..." />
-            <marker date="1534148820432" expanded="true" signature="136:755" ph="{...}" />
-            <marker date="1534148820432" expanded="true" signature="337:435" ph="{...}" />
-            <marker date="1534148820432" expanded="true" signature="489:671" ph="{...}" />
-            <marker date="1534148820432" expanded="true" signature="579:665" ph="/* if (Input.GetKeyDown(KeyCode.Space)) ... */" />
-            <marker date="1534148820432" expanded="true" signature="702:753" ph="{...}" />
+            <marker date="1534161708363" expanded="true" signature="6:101" ph="..." />
+            <marker date="1534161708363" expanded="true" signature="136:812" ph="{...}" />
+            <marker date="1534161708363" expanded="true" signature="271:334" ph="{...}" />
+            <marker date="1534161708363" expanded="true" signature="413:548" ph="{...}" />
+            <marker date="1534161708363" expanded="true" signature="602:807" ph="{...}" />
+            <marker date="1534161708363" expanded="true" signature="718:804" ph="/* if (Input.GetKeyDown(KeyCode.Space)) ... */" />
           </folding>
         </state>
       </provider>
