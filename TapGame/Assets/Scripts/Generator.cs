@@ -4,22 +4,12 @@ using UnityEngine;
 
 public class Generator : MonoBehaviour
 {
-
-
-	public GameObject block;
+	public GameObject block; // префаб
 	public float time;
 	public float maxTime;
-	void Start ()
-	{
-		
-
-	}
 	
 	void Update ()
 	{
-		
-
-
 		if (time >= maxTime)
 		{
 			time = 0;
