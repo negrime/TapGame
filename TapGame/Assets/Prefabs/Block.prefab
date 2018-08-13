@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212781691160136634}
   - component: {fileID: 50908854167914980}
   - component: {fileID: 61914135836436210}
-  - component: {fileID: 114547273598059906}
+  - component: {fileID: 114976850815415334}
   m_Layer: 0
   m_Name: Block
   m_TagString: Untagged
@@ -88,7 +88,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &114547273598059906
+--- !u!114 &114976850815415334
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -100,6 +100,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  txt: {fileID: 0}
+  words:
+  - BEGIN
+  - END
+  - PROCEDURE
+  - FUNCTION
+  - DO WHILE
+  word: 
 --- !u!212 &212781691160136634
 SpriteRenderer:
   m_ObjectHideFlags: 1
