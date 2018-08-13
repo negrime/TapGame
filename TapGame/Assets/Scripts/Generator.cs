@@ -10,6 +10,7 @@ public class Generator : MonoBehaviour
 	
 	void Update ()
 	{
+		
 		if (time >= maxTime)
 		{
 			time = 0;
