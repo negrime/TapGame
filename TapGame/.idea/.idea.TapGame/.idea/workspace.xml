@@ -49,14 +49,12 @@
       <file leaf-file-name="CamFollow.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/CamFollow.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="22" column="85" selection-start-line="22" selection-start-column="85" selection-end-line="22" selection-end-column="85" />
+            <state relative-caret-position="90">
+              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
               <folding>
-                <marker date="1534112640462" expanded="false" signature="6:78" ph="..." />
-                <marker date="1534112640462" expanded="true" signature="118:344" ph="{...}" />
-                <marker date="1534112640462" expanded="true" signature="164:173" ph="{...}" />
-                <marker date="1534112640462" expanded="true" signature="193:202" ph="{...}" />
-                <marker date="1534112640462" expanded="true" signature="230:342" ph="{...}" />
+                <marker date="1534147082714" expanded="false" signature="6:78" ph="..." />
+                <marker date="1534147082714" expanded="true" signature="118:293" ph="{...}" />
+                <marker date="1534147082714" expanded="true" signature="176:291" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -138,12 +136,12 @@
       <option name="presentableId" value="Default" />
       <updated>1534100554352</updated>
       <workItem from="1534100560608" duration="2165000" />
-      <workItem from="1534111247486" duration="1203000" />
+      <workItem from="1534111247486" duration="1609000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3368000" />
+    <option name="totallyTimeSpent" value="3774000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -188,11 +186,9 @@
         <state relative-caret-position="300">
           <caret line="22" column="85" selection-start-line="22" selection-start-column="85" selection-end-line="22" selection-end-column="85" />
           <folding>
-            <marker date="1534112640462" expanded="false" signature="6:78" ph="..." />
-            <marker date="1534112640462" expanded="true" signature="118:344" ph="{...}" />
-            <marker date="1534112640462" expanded="true" signature="164:173" ph="{...}" />
-            <marker date="1534112640462" expanded="true" signature="193:202" ph="{...}" />
-            <marker date="1534112640462" expanded="true" signature="230:342" ph="{...}" />
+            <marker date="1534147082714" expanded="false" signature="6:78" ph="..." />
+            <marker date="1534147082714" expanded="true" signature="118:293" ph="{...}" />
+            <marker date="1534147082714" expanded="true" signature="176:291" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -245,14 +241,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CamFollow.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="85" selection-start-line="22" selection-start-column="85" selection-end-line="22" selection-end-column="85" />
+        <state relative-caret-position="90">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
           <folding>
-            <marker date="1534112640462" expanded="false" signature="6:78" ph="..." />
-            <marker date="1534112640462" expanded="true" signature="118:344" ph="{...}" />
-            <marker date="1534112640462" expanded="true" signature="164:173" ph="{...}" />
-            <marker date="1534112640462" expanded="true" signature="193:202" ph="{...}" />
-            <marker date="1534112640462" expanded="true" signature="230:342" ph="{...}" />
+            <marker date="1534147082714" expanded="false" signature="6:78" ph="..." />
+            <marker date="1534147082714" expanded="true" signature="118:293" ph="{...}" />
+            <marker date="1534147082714" expanded="true" signature="176:291" ph="{...}" />
           </folding>
         </state>
       </provider>

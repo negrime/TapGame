@@ -7,16 +7,6 @@ public class CamFollow : MonoBehaviour
 
 
 	public Transform target;
-	void Start () 
-	{
-		
-	}
-	
-
-	void Update () 
-	{
-		
-	}
 
 	private void LateUpdate()
 	{
