@@ -10,7 +10,6 @@ public class Generator : MonoBehaviour
 	
 	void Update ()
 	{
-		
 		if (time >= maxTime)
 		{
 			time = 0;
@@ -21,9 +20,6 @@ public class Generator : MonoBehaviour
 		{
 			time += Time.deltaTime;
 		}
-		
-		//StartCoroutine("Wait");
-		
 	}
 
 	IEnumerator Wait()
