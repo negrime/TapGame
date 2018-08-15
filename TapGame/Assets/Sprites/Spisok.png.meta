@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 60ed99e837b295d48bcc55e451ab726b
+guid: 6a78a9449828f4a26beb0a074a095a1a
 TextureImporter:
   fileIDToRecycleName:
     21300000: Spisok_0
@@ -8,8 +8,37 @@ TextureImporter:
     21300006: Spisok_3
     21300008: Spisok_4
     21300010: Spisok_5
+    21300012: Spisok_6
+    21300014: Spisok_7
+    21300016: Spisok_8
+    21300018: Spisok_9
+    21300020: Spisok_10
+    21300022: Spisok_11
+    21300024: Spisok_12
+    21300026: Spisok_13
+    21300028: Spisok_14
+    21300030: Spisok_15
+    21300032: Spisok_16
+    21300034: Spisok_17
+    21300036: Spisok_18
+    21300038: Spisok_19
+    21300040: Spisok_20
+    21300042: Spisok_21
+    21300044: Spisok_22
+    21300046: Spisok_23
+    21300048: Spisok_24
+    21300050: Spisok_25
+    21300052: Spisok_26
+    21300054: Spisok_27
+    21300056: Spisok_28
+    21300058: Spisok_29
+    21300060: Spisok_30
+    21300062: Spisok_31
+    21300064: Spisok_32
+    21300066: Spisok_33
+    21300068: Spisok_34
   externalObjects: {}
-  serializedVersion: 6
+  serializedVersion: 5
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -27,8 +56,6 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
-  streamingMipmaps: 0
-  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -39,7 +66,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: 0
     aniso: -1
-    mipBias: -100
+    mipBias: -1
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -98,13 +125,13 @@ TextureImporter:
         width: 118
         height: 183
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df39df50854da1c46bc345e02f8e8a2f
+      spriteID: d8e7803cfe7e04f82acd11dd3af6b7e9
       vertices: []
       indices: 
       edges: []
@@ -115,16 +142,16 @@ TextureImporter:
         serializedVersion: 2
         x: 148
         y: 406
-        width: 58
+        width: 59
         height: 185
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9be4b4ac47ce01144b4127d5d3abe9f5
+      spriteID: 4e42a16faaf1c4fd98bdd0098c36c44b
       vertices: []
       indices: 
       edges: []
@@ -135,16 +162,16 @@ TextureImporter:
         serializedVersion: 2
         x: 230
         y: 406
-        width: 65
+        width: 66
         height: 101
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2bbc503402160be42b9a965528a00238
+      spriteID: 389c724dade364d97a2d99f19e5cff05
       vertices: []
       indices: 
       edges: []
@@ -153,18 +180,18 @@ TextureImporter:
       name: Spisok_3
       rect:
         serializedVersion: 2
-        x: 315
+        x: 317
         y: 403
-        width: 81
+        width: 78
         height: 197
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99a6b9d74ffc57c47b5d9805ada1c87c
+      spriteID: 4c283d0f2d3494731bb2d09873747560
       vertices: []
       indices: 
       edges: []
@@ -173,10 +200,10 @@ TextureImporter:
       name: Spisok_4
       rect:
         serializedVersion: 2
-        x: 22
-        y: 310
-        width: 12
-        height: 39
+        x: 479
+        y: 399
+        width: 418
+        height: 176
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,13 +211,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6640e018e60cf6e479f36aff5b93fca8
+      spriteID: bf4609a42970c4ec8a7287845971bea1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: Spisok_5
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 387
+        width: 40
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fcdd6fcbbffb491e9628e095ee499d2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spisok_6
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 387
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8cd446ae7b4d4bbba7fa680122f8166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spisok_7
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 371
+        width: 53
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc572e452215434f99f8f58c015db3c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spisok_8
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 214
+        width: 418
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e4ce956bf1834dbb8d0404938d32f60
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spisok_9
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 373
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3dd7fb011b6d4be3afa55c685526b7b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spisok_10
       rect:
         serializedVersion: 2
         x: 58
@@ -204,7 +331,487 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b90a6d2e0fbc404e9a24d3d3323cdb8
+      spriteID: 30fd192f1d0ef42af863b673228c18dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spisok_11
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 374
+        width: 40
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52b3ec888df4a4b81b4d9c0eae48834a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spisok_12
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 374
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f1000da70aa469aac03b3dece6420a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spisok_13
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 310
+        width: 12
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a10c805c55140fb9bb300bcf6468d8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spisok_14
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 308
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b167f78760740e8ad1a2bdccf95699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spisok_15
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 308
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 063c8370036ec4fa4a0e978c6ed62a72
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spisok_16
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 309
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 705b8a3da2523440ea18a15071cda8e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spisok_17
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 308
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 373b08df1c6764bd9b2a52fba14724cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spisok_18
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 309
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2181703f417743d28003e38f6bb4ac2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spisok_19
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 307
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb5281acb2b64f2598ba80fc667a8d8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spisok_20
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 307
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45666a341bb454e119d24d6c1f71b1e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spisok_21
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 305
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95594f29a668d4e7181890f71ae18c37
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spisok_22
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 254
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37722e9c01f24be2a94ef55521a97c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spisok_23
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 250
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b33f54ca39342d38d7016d73ba97ff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spisok_24
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 253
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 467c141f4053641afb343a9c6b48e369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spisok_25
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 250
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f15ffd624658348d39763862665158ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spisok_26
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 249
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7300d855664f4d46a4e09aa28b20a2d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spisok_27
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 251
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff34f27c4b0b436883c2b158ef11fdd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spisok_28
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 250
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee6e02c33eea4482eb6b027e42101d42
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spisok_29
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 246
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6d3537d61004e619e11fdbff35bd4e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spisok_30
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 247
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de79f24fc080e4a339c2167d89d418ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spisok_31
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 252
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8270e9e5e8afc4818bb01ffcba4714bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spisok_32
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 240
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa64de241f844293ab8b6e03bbc4e5e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spisok_33
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 236
+        width: 12
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c7695f3fca6f49d7b554a33d449a09a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spisok_34
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 28
+        width: 418
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab8e77124add44d5a556427d04c8fd9
       vertices: []
       indices: 
       edges: []
@@ -212,7 +819,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: fa48e5f402e13484b827a36b3687cba0
+    spriteID: c6bbf683564224c619e7ad4f16a16e64
     vertices: []
     indices: 
     edges: []
