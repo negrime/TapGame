@@ -27,7 +27,12 @@ public class Move : MonoBehaviour
 	void Update ()
 	{
 		transform.Translate(speed * new Vector2(-1,0) * Time.deltaTime, Space.World); // перемещение
-		
+
+
+		if (transform.position.x < -11)
+		{
+			Destroy(this.gameObject);
+		}
 		// прыжок
 		/*if (Input.GetKeyDown(KeyCode.Space))
 		{

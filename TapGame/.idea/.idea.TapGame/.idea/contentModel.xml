@@ -7,6 +7,7 @@
         <e p="Scripts" t="Include">
           <e p="CamFollow.cs" t="Include" />
           <e p="Generator.cs" t="Include" />
+          <e p="jump.cs" t="Include" />
           <e p="Move.cs" t="Include" />
         </e>
       </e>
