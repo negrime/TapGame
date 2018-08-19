@@ -8,30 +8,40 @@ public class Move : MonoBehaviour
 
 	private Rigidbody2D rb;
 	public float speed;
-	public Text txt; // с этим надо что-то делать
-	public string[] words = new string[] {"BEGIN", "END", "PROCEDURE", "FUNCTION",
-										"DO WHILE"}; // с этим тоже нужно что-то делать
-	
+    public float maxX;
 
-	public string word; 
+    public bool physics;
+    public enum directionX {left = -1, right = 1};
+    public directionX dirX;
+    
+
+
+	 
 
 
 
 	void Start ()
 	{
-		word = words[Random.Range(0, words.Length)]; // рандмное слово для объекта
+		
 		rb = GetComponent<Rigidbody2D>(); // тут все ясно
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-		transform.Translate(speed * new Vector2(-1,0) * Time.deltaTime, Space.World); // перемещение
+        if (physics)
+        {
+            rb.velocity = speed * new Vector2((float)dirX, 0);
+        }
+        else
+        {
+           // Debug.Log(gameObject.name + physics);
+            transform.Translate(speed * new Vector2((float)dirX, 0) * Time.deltaTime, Space.World);
+        }
 
-
-		if (transform.position.x < -11)
+        if (transform.position.x < maxX)
 		{
-			Destroy(this.gameObject);
+			//Destroy(this.gameObject);
 		}
 		// прыжок
 		/*if (Input.GetKeyDown(KeyCode.Space))

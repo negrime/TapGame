@@ -105,14 +105,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  txt: {fileID: 0}
-  words:
-  - BEGIN
-  - END
-  - PROCEDURE
-  - FUNCTION
-  - DO WHILE
-  word: 
+  maxX: 0
+  physics: 0
+  dirX: -1
 --- !u!212 &212264737834373318
 SpriteRenderer:
   m_ObjectHideFlags: 1
