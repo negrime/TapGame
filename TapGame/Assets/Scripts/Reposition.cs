@@ -6,7 +6,6 @@ public class Reposition : MonoBehaviour
 {
 
     public Transform reposition;
-    public Move move;
     public float maxX;
     void Start()
     {
