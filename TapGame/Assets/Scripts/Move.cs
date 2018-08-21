@@ -10,6 +10,7 @@ public class Move : MonoBehaviour
 	public float speed;
     public float maxX;
 
+    public bool destroy;
     public bool physics;
     public enum directionX {left = -1, right = 1};
     public directionX dirX;
@@ -39,16 +40,11 @@ public class Move : MonoBehaviour
             transform.Translate(speed * new Vector2((float)dirX, 0) * Time.deltaTime, Space.World);
         }
 
-        if (transform.position.x < maxX)
+        if (transform.position.x < maxX && destroy)
 		{
-			//Destroy(this.gameObject);
+			Destroy(gameObject);
 		}
-		// прыжок
-		/*if (Input.GetKeyDown(KeyCode.Space))
-		{
-			rb.AddForce(Vector2.up * 300);
-		} 
-		*/
+	
 	}
 
 	

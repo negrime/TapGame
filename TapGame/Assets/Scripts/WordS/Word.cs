@@ -27,10 +27,17 @@ public class Word {
 	public void TypeLetter ()
 	{
 		typeIndex++;
-		display.RemoveLetter();
+        display.text.color = Color.green;
+        display.RemoveLetter();
 	}
 
-	public bool WordTyped ()
+    public void Error()
+    {
+        display.text.color = Color.red;
+
+    }
+
+    public bool WordTyped ()
 	{
 		bool wordTyped = (typeIndex >= word.Length);
 		if (wordTyped)

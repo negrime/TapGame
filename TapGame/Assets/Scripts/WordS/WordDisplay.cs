@@ -16,17 +16,12 @@ public class WordDisplay : MonoBehaviour {
 	public void RemoveLetter ()
 	{
 		text.text = text.text.Remove(0, 1);
-		text.color = Color.red;
+		//text.color = Color.green;
 	}
 
 	public void RemoveWord ()
 	{
 		Destroy(gameObject);
-	}
-
-	private void Update()
-	{
-		transform.Translate(-fallSpeed * Time.deltaTime, 0f, 0f);
 	}
 
 }

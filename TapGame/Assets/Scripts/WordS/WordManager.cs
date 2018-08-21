@@ -10,6 +10,7 @@ public class WordManager : MonoBehaviour {
 
 	private bool hasActiveWord;
 	private Word activeWord;
+    public WordDisplay display;
 
 
     public void AddWord ()
@@ -27,7 +28,13 @@ public class WordManager : MonoBehaviour {
 			if (activeWord.GetNextLetter() == letter)
 			{
 				activeWord.TypeLetter();
-			}
+                
+            }
+            else
+            {
+                activeWord.Error();
+            }
+           
 		} else
 		{
 			foreach(Word word in words)
