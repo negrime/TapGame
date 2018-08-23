@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Generator : MonoBehaviour
 {
-	public GameObject block; // префаб
+	//public GameObject block; // префаб
     public GameObject[] buildings = new GameObject[1];
+    public GameObject[] blocks = new GameObject[1];
 	public float time;
 	public float maxTime;
 	
@@ -15,7 +16,7 @@ public class Generator : MonoBehaviour
 		{
             StartCoroutine("BuildSpawn");
 			time = 0;
-			Instantiate(block, transform.position, Quaternion.identity);
+			Instantiate(blocks[Random.Range(0, blocks.Length)], transform.position, Quaternion.identity);
 			
 		}
 		else

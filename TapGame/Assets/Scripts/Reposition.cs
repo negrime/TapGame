@@ -7,6 +7,7 @@ public class Reposition : MonoBehaviour
 
     public Transform reposition;
     public float maxX;
+    public float posFix;
     void Start()
     {
         
@@ -20,7 +21,7 @@ public class Reposition : MonoBehaviour
     {
         if (transform.position.x < maxX)
         {
-            transform.position = new Vector2(reposition.position.x + (8.88f * 2), reposition.position.y);
+            transform.position = new Vector2(reposition.position.x + (posFix), reposition.position.y);
         }
 
     }
