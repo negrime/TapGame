@@ -272,6 +272,12 @@ MonoBehaviour:
   - {fileID: 1399834540291504, guid: 754f2a4cbfe2d5d4fb8a327e51708030, type: 2}
   - {fileID: 1180329904523356, guid: 7e2254ab72fa4db4fbb5b48e2158e807, type: 2}
   - {fileID: 1571073536906872, guid: 927b8c5d1271eed418a5a8e35c66eedc, type: 2}
+  - {fileID: 1461246415611642, guid: 07a7d197206de454a805bb78ca1aac3b, type: 2}
+  - {fileID: 1946003889313542, guid: 821a26ab86c2b204a929c1448e82fa99, type: 2}
+  - {fileID: 1266065980085658, guid: d86cb16b25e9c0e48b82357f3612a3b1, type: 2}
+  - {fileID: 1732356671489488, guid: c2afb21f68d5a6a4784ac2223305044e, type: 2}
+  - {fileID: 1534967639145184, guid: 8ae5dd56a43711d4d8fc08d5cccb2d9d, type: 2}
+  - {fileID: 1197124240113900, guid: c20c598c6fb3f1244ae6202614cd3ac7, type: 2}
   blocks:
   - {fileID: 1646721452994572, guid: 6c618987513f34703abce1b94947d89f, type: 2}
   - {fileID: 1722289862404268, guid: 987ef2514e370f0458601f47b11b1b23, type: 2}
@@ -1084,7 +1090,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1248939720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1137,7 +1143,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   words: []
   wordSpawner: {fileID: 1248939720}
-  display: {fileID: 0}
 --- !u!114 &1248939724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1411,6 +1416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3de8095a45c1f4224a57372078a4d5c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &1445526664
 GameObject:
   m_ObjectHideFlags: 0

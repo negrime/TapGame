@@ -34,7 +34,8 @@ public class jump : MonoBehaviour
     {
         if (other.CompareTag("Finish"))
         {
-            anim.SetInteger("Jump", Random.Range(1, 3));
+            //anim.SetInteger("Jump", 4);
+            anim.SetInteger("Jump", Random.Range(1, 5));
             anim.SetTrigger("JUMP");
 
             //rb.AddForce(100 * Vector2.right);

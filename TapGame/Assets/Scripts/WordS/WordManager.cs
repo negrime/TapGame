@@ -10,7 +10,7 @@ public class WordManager : MonoBehaviour {
 
 	private bool hasActiveWord;
 	private Word activeWord;
-    public WordDisplay display;
+  //  public WordDisplay display;
 
 
     public void AddWord ()
