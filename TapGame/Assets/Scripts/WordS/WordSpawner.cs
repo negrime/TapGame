@@ -8,7 +8,12 @@ public class WordSpawner : MonoBehaviour {
 	public Transform wordCanvas;
     public Transform spawnPos;
 
-	public WordDisplay SpawnWord ()
+
+    private void Start()
+    {
+        wordCanvas = GameObject.Find("Canvas").GetComponent<Transform>();
+    }
+    public WordDisplay SpawnWord ()
 	{ 
         Vector3 randomPosition = spawnPos.position;
 

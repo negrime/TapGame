@@ -10,6 +10,8 @@ public class Move : MonoBehaviour
 	public float speed;
     public float maxX;
 
+    private Player player;
+
     public bool destroy;
     public bool physics;
     public enum directionX {left = -1, right = 1};
@@ -23,13 +25,15 @@ public class Move : MonoBehaviour
 
 	void Start ()
 	{
-		
-		rb = GetComponent<Rigidbody2D>(); // тут все ясно
+        player = FindObjectOfType<Player>(); 
+		rb = GetComponent<Rigidbody2D>(); 
+        
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
+        speed = player.globalSpeed;
         if (physics)
         {
             rb.velocity = speed * new Vector2((float)dirX, 0);

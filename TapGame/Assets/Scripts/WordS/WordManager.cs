@@ -7,6 +7,7 @@ public class WordManager : MonoBehaviour {
 	public List<Word> words;
 
 	public WordSpawner wordSpawner;
+    public Player player;
 
 	private bool hasActiveWord;
 	private Word activeWord;
@@ -33,6 +34,8 @@ public class WordManager : MonoBehaviour {
             else
             {
                 activeWord.Error();
+                player.health--;
+
             }
            
 		} else

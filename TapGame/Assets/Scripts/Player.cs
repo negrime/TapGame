@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class jump : MonoBehaviour
+public class Player : MonoBehaviour
 {
-
+    [Header("Characteristics")]
+    public bool isRun;
+    public float globalSpeed;
+    public int health;
     private Rigidbody2D rb;
     private Animator anim;
 
@@ -17,22 +20,13 @@ public class jump : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            anim.SetInteger("Jump", Random.Range(1, 3));
-            anim.SetTrigger("JUMP");
-            rb.AddForce(100 * Vector2.right);
-            rb.AddForce(300 * Vector2.up);
-
-        }
-
+        HealthChecker(health);
     }
 
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Finish"))
+        if (other.CompareTag("Block"))
         {
             //anim.SetInteger("Jump", 4);
             anim.SetInteger("Jump", Random.Range(1, 5));
@@ -41,6 +35,24 @@ public class jump : MonoBehaviour
             //rb.AddForce(100 * Vector2.right);
             rb.AddForce(350 * Vector2.up);
 
+
         }
+    }
+
+
+    private void HealthChecker(int hp)
+    {
+        if (hp <= 0)
+        {
+            isRun = false;
+            Debug.Log("Health <= 0");
+            GameOver();
+        }
+    }
+
+    private void GameOver()
+    {
+        globalSpeed = 0;
+        
     }
 }

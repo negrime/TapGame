@@ -14,7 +14,6 @@ public class Word {
 	{
 		word = _word;
 		typeIndex = 0;
-
 		display = _display;
 		display.SetWord(word);
 	}
@@ -34,6 +33,7 @@ public class Word {
     public void Error()
     {
         display.text.color = Color.red;
+        
 
     }
 

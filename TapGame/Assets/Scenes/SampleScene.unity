@@ -237,6 +237,7 @@ GameObject:
   m_Component:
   - component: {fileID: 400340512}
   - component: {fileID: 400340513}
+  - component: {fileID: 400340514}
   m_Layer: 0
   m_Name: Generator
   m_TagString: Untagged
@@ -286,8 +287,22 @@ MonoBehaviour:
   - {fileID: 1238437563514752, guid: 384d2cead0b81ed49bc22b622618c9dd, type: 2}
   - {fileID: 1495875856003932, guid: 71f3ba3e1287e5f41abdf24eb12423f5, type: 2}
   - {fileID: 1092883717138670, guid: e9f16df284ac6b44bb3d06b930aea18f, type: 2}
-  time: 0
+  time: 2
   maxTime: 2
+--- !u!114 &400340514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 400340511}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19a49e4e28e752c4eac7e9b6d4df0baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wordPrefab: {fileID: 1086810566883454, guid: ab3b9a64d13a78b41b784982bb7bfb72, type: 2}
+  wordCanvas: {fileID: 1445526668}
+  spawnPos: {fileID: 0}
 --- !u!1 &420423081
 GameObject:
   m_ObjectHideFlags: 0
@@ -1090,7 +1105,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1248939720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1103,7 +1118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wordPrefab: {fileID: 1086810566883454, guid: ab3b9a64d13a78b41b784982bb7bfb72, type: 2}
-  wordCanvas: {fileID: 1445526668}
+  wordCanvas: {fileID: 0}
   spawnPos: {fileID: 400340512}
 --- !u!4 &1248939721
 Transform:
@@ -1116,7 +1131,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1248939722
 MonoBehaviour:
@@ -1143,6 +1158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   words: []
   wordSpawner: {fileID: 1248939720}
+  player: {fileID: 1406361054}
 --- !u!114 &1248939724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1416,7 +1432,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3de8095a45c1f4224a57372078a4d5c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 0
+  isRun: 0
+  globalSpeed: 3
+  health: 3
 --- !u!1 &1445526664
 GameObject:
   m_ObjectHideFlags: 0
@@ -1677,7 +1695,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1988079337
 GameObject:

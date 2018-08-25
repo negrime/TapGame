@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114382864262166286}
   m_Layer: 0
   m_Name: Spisok_11 (2)
-  m_TagString: Finish
+  m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58,7 +58,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.49632984, y: 0.24434747}
     oldSize: {x: 0.53, y: 0.27}
     newSize: {x: 0.4, y: 0.09}
     adaptiveTilingThreshold: 0.5
@@ -83,7 +83,7 @@ BoxCollider2D:
   m_Offset: {x: -0.43, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.49632984, y: 0.24434747}
     oldSize: {x: 0.53, y: 0.27}
     newSize: {x: 0.4, y: 0.09}
     adaptiveTilingThreshold: 0.5
