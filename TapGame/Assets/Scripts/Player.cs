@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
 
+    public Generator generator;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -44,7 +46,6 @@ public class Player : MonoBehaviour
     {
         if (hp <= 0)
         {
-            isRun = false;
             Debug.Log("Health <= 0");
             GameOver();
         }
@@ -52,6 +53,8 @@ public class Player : MonoBehaviour
 
     private void GameOver()
     {
+        generator.isGenerate = false;
+        isRun = false;
         globalSpeed = 0;
         
     }
