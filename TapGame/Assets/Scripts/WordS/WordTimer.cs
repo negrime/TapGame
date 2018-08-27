@@ -21,7 +21,7 @@ public class WordTimer : MonoBehaviour {
 		{
 			wordManager.AddWord();
 			nextWordTime = Time.time + wordDelay;
-			wordDelay *= .99f;
+			
 		}
 	}
 

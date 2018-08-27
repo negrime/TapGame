@@ -10,7 +10,7 @@ public class MenuManager : MonoBehaviour {
 
     public void OnPlayClick()
     {
-        menuManager.SetActive(false);
+        //menuManager.SetActive(false);
         generator.isGenerate = true;
 
     }

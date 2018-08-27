@@ -9,7 +9,7 @@ public class WordManager : MonoBehaviour {
 	public WordSpawner wordSpawner;
     public Player player;
 
-	private bool hasActiveWord;
+	public bool hasActiveWord;
 	private Word activeWord;
   //  public WordDisplay display;
 
