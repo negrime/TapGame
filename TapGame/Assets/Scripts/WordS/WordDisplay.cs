@@ -5,15 +5,26 @@ using UnityEngine.UI;
 
 public class WordDisplay : MonoBehaviour {
 
-    public WordManager wm;
+    private WordManager wm;
+	private Player player;
 	public Text text;
 	public float fallSpeed = 1f;
 
     private void Start()
     {
         wm = FindObjectOfType<WordManager>();
+	    player = FindObjectOfType<Player>();
     }
-    public void SetWord (string word)
+
+	private void Update()
+	{
+		if (Vector2.Distance(player.transform.position, transform.position) < 2f)
+		{
+			RemoveWord();
+		}
+	}
+
+	public void SetWord (string word)
 	{
 		text.text = word;
 	}
@@ -26,19 +37,22 @@ public class WordDisplay : MonoBehaviour {
 
 	public void RemoveWord ()
 	{
+		wm.hasActiveWord = false;
 		Destroy(gameObject);
+		
 	}
 
   
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+       /* if (collision.CompareTag("Player"))
         {
             wm.hasActiveWord = false;
             Debug.Log("fewwef");
             RemoveWord();
         }
+        */
     }
 
 }

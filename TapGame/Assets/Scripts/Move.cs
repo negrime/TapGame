@@ -33,7 +33,7 @@ public class Move : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-        speed = player.globalSpeed;
+        //speed = player.globalSpeed;
         if (physics)
         {
             rb.velocity = speed * new Vector2((float)dirX, 0);
