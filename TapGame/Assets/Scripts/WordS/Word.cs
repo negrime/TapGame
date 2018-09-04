@@ -37,12 +37,12 @@ public class Word {
 
     }
 
-    public bool WordTyped ()
+    public bool WordTyped (int add)
 	{
 		bool wordTyped = (typeIndex >= word.Length);
 		if (wordTyped)
 		{
-			display.RemoveWord();
+			display.RemoveWord(add);
 		}
 		return wordTyped;
 	}

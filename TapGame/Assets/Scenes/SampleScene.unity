@@ -1475,6 +1475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordManager: {fileID: 1248939723}
   wordDelay: 2
+  nextWordTime: 2
 --- !u!1 &1304985059
 GameObject:
   m_ObjectHideFlags: 0
@@ -1735,6 +1736,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3de8095a45c1f4224a57372078a4d5c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scores: 0
+  scoreAddValue: 10
   isRun: 0
   globalSpeed: 3
   health: 223
@@ -2122,7 +2125,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &2114430938
 SpriteRenderer:
   m_ObjectHideFlags: 0

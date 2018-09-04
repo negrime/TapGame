@@ -7,8 +7,9 @@ public class WordTimer : MonoBehaviour {
 	public WordManager wordManager;
     private Generator generator;
 
-	public float wordDelay = 1.5f;
-	private float nextWordTime = 0f;
+	public float wordDelay;
+	public float nextWordTime = 0f;
+	
 
     private void Start()
     {
@@ -17,11 +18,14 @@ public class WordTimer : MonoBehaviour {
 
     private void Update()
 	{
-		if (Time.time >= nextWordTime && generator.isGenerate)
+		if (nextWordTime >= wordDelay && generator.isGenerate)
 		{
 			wordManager.AddWord();
-			nextWordTime = Time.time + wordDelay;
-			
+			nextWordTime = 0;
+		}
+		else if (generator.isGenerate)
+		{
+			nextWordTime += Time.deltaTime;
 		}
 	}
 

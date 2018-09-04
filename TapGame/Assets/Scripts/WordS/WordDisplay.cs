@@ -20,7 +20,7 @@ public class WordDisplay : MonoBehaviour {
 	{
 		if (Vector2.Distance(player.transform.position, transform.position) < 2f)
 		{
-			RemoveWord();
+			RemoveWord(player.scoreAddValue);
 		}
 	}
 
@@ -35,11 +35,12 @@ public class WordDisplay : MonoBehaviour {
 		//text.color = Color.green;
 	}
 
-	public void RemoveWord ()
+	public void RemoveWord (int add)
 	{
 		wm.hasActiveWord = false;
 		Destroy(gameObject);
-		
+		player.scores =+ add;
+
 	}
 
   

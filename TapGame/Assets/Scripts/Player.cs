@@ -5,6 +5,8 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [Header("Characteristics")]
+    public int scores;
+    public int scoreAddValue;
     public bool isRun;
     public float globalSpeed;
     public int health;
@@ -28,6 +30,11 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+
+        if (other)
+        {
+            
+        }
         if (other.CompareTag("Block"))
         {
             //anim.SetInteger("Jump", 4);

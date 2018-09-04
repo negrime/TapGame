@@ -27,7 +27,6 @@ public class Move : MonoBehaviour
 	{
         player = FindObjectOfType<Player>(); 
 		rb = GetComponent<Rigidbody2D>(); 
-        
 	}
 	
 	// Update is called once per frame

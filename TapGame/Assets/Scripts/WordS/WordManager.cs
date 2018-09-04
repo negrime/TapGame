@@ -52,7 +52,7 @@ public class WordManager : MonoBehaviour {
 			}
 		}
 
-		if (hasActiveWord && activeWord.WordTyped())
+		if (hasActiveWord && activeWord.WordTyped(player.scoreAddValue))
 		{
 			hasActiveWord = false;
 			words.Remove(activeWord);
