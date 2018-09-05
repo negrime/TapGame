@@ -5,11 +5,17 @@ using UnityEngine;
 public class WordInput : MonoBehaviour {
 
 	public WordManager wordManager;
+    private Player player;
 
-	// Update is called once per frame
-	void Update () {
-		foreach (char letter in Input.inputString.ToLower())
+ 
+
+    // Update is called once per frame
+    void Update () {
+        
+        
+        foreach (char letter in Input.inputString.ToLower())
 		{
+           
 			wordManager.TypeLetter(letter);
 		}
 	}

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -15,6 +16,9 @@ public class Player : MonoBehaviour
 
     public Generator generator;
 
+    [Header("UI")]
+    public Text scoreTxt;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -24,6 +28,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        scoreTxt.text = scores.ToString();
         HealthChecker(health);
     }
 
@@ -31,10 +36,7 @@ public class Player : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
 
-        if (other)
-        {
-            
-        }
+       
         if (other.CompareTag("Block"))
         {
             //anim.SetInteger("Jump", 4);

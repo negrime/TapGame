@@ -9,7 +9,9 @@ public class Word {
 	private int typeIndex;
 
 	WordDisplay display;
-
+  public WordManager wm;
+    
+    
 	public Word (string _word, WordDisplay _display)
 	{
 		word = _word;
@@ -20,6 +22,7 @@ public class Word {
 
 	public char GetNextLetter ()
 	{
+       
 		return word[typeIndex];
 	}
 

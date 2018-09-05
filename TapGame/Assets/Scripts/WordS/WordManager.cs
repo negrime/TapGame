@@ -38,7 +38,8 @@ public class WordManager : MonoBehaviour {
 
             }
            
-		} else
+		}
+        else
 		{
 			foreach(Word word in words)
 			{
