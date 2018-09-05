@@ -252,7 +252,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 400340511}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.73, y: -3.83, z: -1}
+  m_LocalPosition: {x: 10.12, y: -3.83, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1537,6 +1537,7 @@ MonoBehaviour:
   wordSpawner: {fileID: 1248939720}
   player: {fileID: 1406361054}
   hasActiveWord: 0
+  fineshed: 1
 --- !u!114 &1248939724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1549,6 +1550,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wordManager: {fileID: 1248939723}
+  blocks:
+  - {fileID: 1646721452994572, guid: 6c618987513f34703abce1b94947d89f, type: 2}
+  - {fileID: 1722289862404268, guid: 987ef2514e370f0458601f47b11b1b23, type: 2}
+  - {fileID: 1092883717138670, guid: e9f16df284ac6b44bb3d06b930aea18f, type: 2}
+  - {fileID: 1914903493393658, guid: 1c2a06a7dc20d7e49aee1bb5fad76534, type: 2}
+  - {fileID: 1238437563514752, guid: 384d2cead0b81ed49bc22b622618c9dd, type: 2}
+  - {fileID: 1495875856003932, guid: 71f3ba3e1287e5f41abdf24eb12423f5, type: 2}
   wordDelay: 2
   nextWordTime: 2
 --- !u!1 &1304985059

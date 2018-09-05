@@ -31,22 +31,27 @@ public class Word {
 		typeIndex++;
         display.text.color = Color.green;
         display.RemoveLetter();
+       
 	}
 
     public void Error()
     {
+
         display.text.color = Color.red;
         
 
     }
 
-    public bool WordTyped (int add)
+    public bool WordTyped(int add)
 	{
 		bool wordTyped = (typeIndex >= word.Length);
 		if (wordTyped)
 		{
 			display.RemoveWord(add);
-		}
+            
+        }
+        
+
 		return wordTyped;
 	}
 

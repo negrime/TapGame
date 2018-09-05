@@ -31,15 +31,24 @@ public class WordDisplay : MonoBehaviour {
 
 	public void RemoveLetter ()
 	{
-		text.text = text.text.Remove(0, 1);
-		//text.color = Color.green;
-	}
+       
+        text.text = text.text.Remove(0, 1);
+        
+            
+        
+		
+       
+        //text.color = Color.green;
+    }
 
 	public void RemoveWord (int add = 0)
 	{
-		wm.hasActiveWord = false;
+        wm.fineshed = true;
+        wm.hasActiveWord = false;
 		Destroy(gameObject);
 		player.scores += add;
+        
+
 
 	}
 

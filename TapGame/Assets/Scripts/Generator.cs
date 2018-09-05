@@ -26,7 +26,7 @@ public class Generator : MonoBehaviour
         {
             StartCoroutine("BuildSpawn");
             time = 0;
-            Instantiate(blocks[Random.Range(0, blocks.Length)], transform.position, Quaternion.identity);
+           // Instantiate(blocks[Random.Range(0, blocks.Length)], transform.position, Quaternion.identity);
 
         }
         else

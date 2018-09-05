@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class WordTimer : MonoBehaviour {
 
-	public WordManager wordManager;
+    public WordManager wordManager;
     private Generator generator;
+    public GameObject[] blocks = new GameObject[1];
 
 	public float wordDelay;
 	public float nextWordTime = 0f;
@@ -18,9 +19,12 @@ public class WordTimer : MonoBehaviour {
 
     private void Update()
 	{
-		if (nextWordTime >= wordDelay && generator.isGenerate)
+		if (nextWordTime >= wordDelay && generator.isGenerate && wordManager.fineshed)
 		{
-			wordManager.AddWord();
+            Instantiate(blocks[Random.Range(0, blocks.Length)], generator.transform.position, Quaternion.identity);
+            Debug.Log("SPAWN");
+            wordManager.AddWord();
+            wordManager.fineshed = false;
 			nextWordTime = 0;
 		}
 		else if (generator.isGenerate)
