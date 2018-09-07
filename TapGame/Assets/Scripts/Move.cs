@@ -11,33 +11,35 @@ public class Move : MonoBehaviour
     public float maxX;
 
     private Player player;
+	private Generator generator;
 
+	
 	public bool personalSpeed;
     public bool destroy;
     public bool physics;
     public enum directionX {left = -1, right = 1};
     public directionX dirX;
-    
 
-
-	 
-
-
-
-	void Start ()
+	private void Start ()
 	{
-        player = FindObjectOfType<Player>(); 
+        player = FindObjectOfType<Player>();
 		rb = GetComponent<Rigidbody2D>();
-		if (!personalSpeed)
-		{
-			speed = player.globalSpeed;
-		}
-		
+		generator = FindObjectOfType<Generator>();
 	}
-	
+
 	// Update is called once per frame
 	void Update ()
 	{
+		
+		if (!personalSpeed && player.isRun)
+		{
+			speed = player.globalSpeed;
+		}
+		else
+		{
+			speed = 0;
+		}
+		
         //speed = player.globalSpeed;
         if (physics)
         {

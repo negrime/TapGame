@@ -587,6 +587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuManager: {fileID: 535700223}
   generator: {fileID: 400340513}
+  player: {fileID: 1406361054}
 --- !u!1 &595550527
 GameObject:
   m_ObjectHideFlags: 0
@@ -1829,8 +1830,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scores: 0
   scoreAddValue: 10
-  isRun: 0
-  globalSpeed: 3
+  isRun: 1
+  globalSpeed: 0
+  speed: 3
   health: 1
   generator: {fileID: 400340513}
   scoreTxt: {fileID: 968630984}

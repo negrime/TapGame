@@ -9,7 +9,11 @@ public class Player : MonoBehaviour
     public int scores;
     public int scoreAddValue;
     public bool isRun;
+    
+    [HideInInspector]
     public float globalSpeed;
+    public float speed;
+   
     public int health;
     private Rigidbody2D rb;
     private Animator anim;
@@ -19,17 +23,18 @@ public class Player : MonoBehaviour
     [Header("UI")]
     public Text scoreTxt;
 
-    void Start()
+    
+    private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        globalSpeed = speed;
     }
 
     // Update is called once per frame
     void Update()
     {
-        scoreTxt.text = scores.ToString();
-        
+        scoreTxt.text = scores.ToString();  
     }
 
 
