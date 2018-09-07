@@ -39,7 +39,7 @@ public class WordManager : MonoBehaviour
             {
                
                 activeWord.Error();
-                player.health--;
+                player.HealthDec();
                 
 
 

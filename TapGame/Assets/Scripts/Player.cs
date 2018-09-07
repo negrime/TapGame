@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         scoreTxt.text = scores.ToString();
-        HealthChecker(health);
+        
     }
 
 
@@ -42,26 +42,28 @@ public class Player : MonoBehaviour
             //anim.SetInteger("Jump", 4);
             anim.SetInteger("Jump", Random.Range(1, 5));
             anim.SetTrigger("JUMP");
-
             //rb.AddForce(100 * Vector2.right);
             rb.AddForce(350 * Vector2.up);
-
-
         }
     }
 
 
+    public void HealthDec()
+    {
+        health--;
+        HealthChecker(health);
+    }
     private void HealthChecker(int hp)
     {
         if (hp <= 0)
         {
-            Debug.Log("Health <= 0");
             GameOver();
         }
     }
 
     private void GameOver()
     {
+        scores = 0;
         generator.isGenerate = false;
         isRun = false;
         globalSpeed = 0;

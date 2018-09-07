@@ -22,7 +22,6 @@ public class WordTimer : MonoBehaviour {
 		if (nextWordTime >= wordDelay && generator.isGenerate && wordManager.fineshed)
 		{
             Instantiate(blocks[Random.Range(0, blocks.Length)], generator.transform.position, Quaternion.identity);
-            Debug.Log("SPAWN");
             wordManager.AddWord();
             wordManager.fineshed = false;
 			nextWordTime = 0;

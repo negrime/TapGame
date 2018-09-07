@@ -144,6 +144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   maxX: -19
+  personalSpeed: 0
   destroy: 0
   physics: 1
   dirX: -1
@@ -394,6 +395,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   maxX: 0
+  personalSpeed: 1
   destroy: 0
   physics: 0
   dirX: -1
@@ -676,6 +678,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   maxX: -17.73
+  personalSpeed: 0
   destroy: 0
   physics: 0
   dirX: -1
@@ -808,6 +811,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   maxX: 0
+  personalSpeed: 1
   destroy: 0
   physics: 0
   dirX: -1
@@ -915,6 +919,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1.5
   maxX: 0
+  personalSpeed: 1
   destroy: 0
   physics: 0
   dirX: -1
@@ -1314,6 +1319,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1.5
   maxX: 0
+  personalSpeed: 1
   destroy: 0
   physics: 0
   dirX: -1
@@ -1388,6 +1394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   maxX: -17.73
+  personalSpeed: 0
   destroy: 0
   physics: 0
   dirX: -1
@@ -1649,6 +1656,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2.5
   maxX: 0
+  personalSpeed: 1
   destroy: 0
   physics: 0
   dirX: -1
@@ -1823,7 +1831,7 @@ MonoBehaviour:
   scoreAddValue: 10
   isRun: 0
   globalSpeed: 3
-  health: 223
+  health: 1
   generator: {fileID: 400340513}
   scoreTxt: {fileID: 968630984}
 --- !u!1 &1445526664
@@ -2011,6 +2019,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2.5
   maxX: 0
+  personalSpeed: 1
   destroy: 0
   physics: 0
   dirX: -1

@@ -54,6 +54,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   maxX: -14
+  personalSpeed: 0
   destroy: 1
   physics: 0
   dirX: -1

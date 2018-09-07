@@ -12,6 +12,7 @@ public class Move : MonoBehaviour
 
     private Player player;
 
+	public bool personalSpeed;
     public bool destroy;
     public bool physics;
     public enum directionX {left = -1, right = 1};
@@ -26,7 +27,12 @@ public class Move : MonoBehaviour
 	void Start ()
 	{
         player = FindObjectOfType<Player>(); 
-		rb = GetComponent<Rigidbody2D>(); 
+		rb = GetComponent<Rigidbody2D>();
+		if (!personalSpeed)
+		{
+			speed = player.globalSpeed;
+		}
+		
 	}
 	
 	// Update is called once per frame

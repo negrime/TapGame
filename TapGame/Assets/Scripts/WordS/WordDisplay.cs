@@ -7,6 +7,7 @@ public class WordDisplay : MonoBehaviour {
 
     private WordManager wm;
 	private Player player;
+	private Generator generator;
 	public Text text;
 	public float fallSpeed = 1f;
 
@@ -14,6 +15,7 @@ public class WordDisplay : MonoBehaviour {
     {
         wm = FindObjectOfType<WordManager>();
 	    player = FindObjectOfType<Player>();
+	    generator = FindObjectOfType<Generator>();
     }
 
 	private void Update()
@@ -21,6 +23,7 @@ public class WordDisplay : MonoBehaviour {
 		if (Vector2.Distance(player.transform.position, transform.position) < 2f)
 		{
 			RemoveWord();
+			player.HealthDec();
 		}
 	}
 
