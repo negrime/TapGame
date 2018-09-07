@@ -30,16 +30,23 @@ public class Move : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		
-		if (!personalSpeed && player.isRun)
-		{
-			speed = player.globalSpeed;
-		}
-		else
-		{
-			speed = 0;
-		}
-		
+        if(player.isRun)
+        {
+
+         if (!personalSpeed)
+          {
+                speed = player.globalSpeed;
+          }
+          
+
+        }
+        else
+        {
+            speed = 0;
+
+        }
+
+
         //speed = player.globalSpeed;
         if (physics)
         {

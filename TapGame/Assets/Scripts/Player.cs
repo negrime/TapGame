@@ -62,6 +62,7 @@ public class Player : MonoBehaviour
     {
         if (hp <= 0)
         {
+            Debug.Log("Gameover");
             GameOver();
         }
     }
@@ -72,6 +73,16 @@ public class Player : MonoBehaviour
         generator.isGenerate = false;
         isRun = false;
         globalSpeed = 0;
+        StartCoroutine("PauseLoad");
+        
         
     }
+
+    IEnumerator PauseLoad()
+    {
+        yield return new WaitForSeconds(3);
+        Application.LoadLevel("SampleScene");
+    }
+
+
 }

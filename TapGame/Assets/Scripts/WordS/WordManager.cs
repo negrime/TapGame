@@ -12,7 +12,7 @@ public class WordManager : MonoBehaviour
 
     public bool hasActiveWord;
     public bool fineshed;
-    private Word activeWord;
+    public Word activeWord;
     //  public WordDisplay display;
 
 
@@ -31,6 +31,7 @@ public class WordManager : MonoBehaviour
 
             if (activeWord.GetNextLetter() == letter)
             {
+                Debug.Log("Symvol find "  + letter);
                 activeWord.TypeLetter();
                
 
@@ -53,10 +54,14 @@ public class WordManager : MonoBehaviour
             {
                 if (word.GetNextLetter() == letter)
                 {
-                   
+                    Debug.Log("FIND ACIVE WORD");
                     activeWord = word;
                     hasActiveWord = true;
                     word.TypeLetter();
+                    break;
+                }
+                else
+                {
                     break;
                 }
             }
@@ -66,8 +71,14 @@ public class WordManager : MonoBehaviour
         {
             hasActiveWord = false;
             fineshed = true;
-            words.Remove(activeWord);
+            Remove();
         }
     }
+
+    public void Remove()
+    {
+        words.Remove(activeWord);
+    }
+   
 
 }

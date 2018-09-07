@@ -1546,6 +1546,9 @@ MonoBehaviour:
   player: {fileID: 1406361054}
   hasActiveWord: 0
   fineshed: 1
+  activeWord:
+    word: 
+    wm: {fileID: 0}
 --- !u!114 &1248939724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1833,7 +1836,7 @@ MonoBehaviour:
   isRun: 1
   globalSpeed: 0
   speed: 3
-  health: 1
+  health: 10
   generator: {fileID: 400340513}
   scoreTxt: {fileID: 968630984}
 --- !u!1 &1445526664

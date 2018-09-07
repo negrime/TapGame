@@ -16,7 +16,7 @@ public class MenuManager : MonoBehaviour {
         generator.isGenerate = true;
         player.isRun = true;
         player.globalSpeed = player.speed;
-        player.health = 1;
+        player.health = 10;
     }
 	
 

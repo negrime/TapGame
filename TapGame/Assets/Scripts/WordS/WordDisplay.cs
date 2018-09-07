@@ -48,12 +48,13 @@ public class WordDisplay : MonoBehaviour {
 	{
         wm.fineshed = true;
         wm.hasActiveWord = false;
-		Destroy(gameObject);
 		player.scores += add;
-        
+        wm.Remove();
+        Destroy(gameObject);
 
 
-	}
+
+    }
 
   
 
