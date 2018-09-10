@@ -75,6 +75,7 @@ public class WordManager : MonoBehaviour
         }
     }
 
+   
     public void Remove()
     {
         words.Remove(activeWord);

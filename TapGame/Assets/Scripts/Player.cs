@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,6 +20,7 @@ public class Player : MonoBehaviour
     private Animator anim;
 
     public Generator generator;
+    public WordManager wm;
 
     [Header("UI")]
     public Text scoreTxt;
@@ -28,13 +30,15 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        globalSpeed = speed;
+        wm = FindObjectOfType<WordManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        scoreTxt.text = scores.ToString();  
+        scoreTxt.text = scores.ToString();
+        globalSpeed = speed;
+
     }
 
 
@@ -58,6 +62,7 @@ public class Player : MonoBehaviour
         health--;
         HealthChecker(health);
     }
+    
     private void HealthChecker(int hp)
     {
         if (hp <= 0)
@@ -74,15 +79,20 @@ public class Player : MonoBehaviour
         isRun = false;
         globalSpeed = 0;
         StartCoroutine("PauseLoad");
-        
-        
     }
 
+    public void SetSpeed(float speed)
+    {
+        this.speed = speed;
+        
+    }
     IEnumerator PauseLoad()
     {
         yield return new WaitForSeconds(3);
         Application.LoadLevel("SampleScene");
-    }
-
+    } 
+        
+        
+       
 
 }
