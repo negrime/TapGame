@@ -62,6 +62,8 @@ public class Move : MonoBehaviour
 		{
 			Destroy(gameObject);
 		}
+		
+		
 	
 	}
 

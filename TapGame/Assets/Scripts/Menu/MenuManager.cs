@@ -9,6 +9,7 @@ public class MenuManager : MonoBehaviour {
     public Generator generator;
     public Player player;
   
+    
 
     public void OnPlayClick()
     {
@@ -18,6 +19,8 @@ public class MenuManager : MonoBehaviour {
         player.globalSpeed = player.speed;
         player.health = 10;
     }
+    
+    
 	
 
 

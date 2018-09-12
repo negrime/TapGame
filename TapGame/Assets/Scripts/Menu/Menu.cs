@@ -2,27 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayBTN : StateMachineBehaviour {
+public class Menu : StateMachineBehaviour {
 
-    private Generator generator;
-	  //OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
+	Generator generator;
+
+	private Player player;
+	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    {
-        generator = FindObjectOfType<Generator>();
-	    
+	{
+		generator = FindObjectOfType<Generator>();
+		player = FindObjectOfType<Player>();
 	}
 
-	 //OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
-	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    {
-	    if (generator.isGenerate)
-        {
-            animator.SetBool("Menu", false);
-        }
-        else
-        {
-            animator.SetBool("Menu", true);
-        }
+	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
+	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) 
+	{
+		if (generator.isGenerate)
+		{
+			animator.SetBool("Menu", false);
+		}
+		else
+		{
+			animator.SetBool("Menu", true);
+		}
 	}
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state

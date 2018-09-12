@@ -25,6 +25,8 @@ public class Player : MonoBehaviour
     [Header("UI")]
     public Text scoreTxt;
 
+    public Text speedTxt;
+
     
     private void Start()
     {
@@ -84,7 +86,8 @@ public class Player : MonoBehaviour
     public void SetSpeed(float speed)
     {
         this.speed = speed;
-        
+        speedTxt.text = "Speed: " + this.speed.ToString("0");
+
     }
     IEnumerator PauseLoad()
     {
