@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WordGenerator : MonoBehaviour {
 
-	private static string[] wordList = {"private", "public", "protected", "void" };
+	private static string[] wordList = {"private", "rublic", "brotected", "void", "kek", "whats" };
 
 	public static string GetRandomWord ()
 	{

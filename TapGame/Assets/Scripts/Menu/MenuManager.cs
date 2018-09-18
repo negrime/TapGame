@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-public class MenuManager : MonoBehaviour {
+public class MenuManager : MonoBehaviour 
+{
 
     public GameObject menuManager;
     public Generator generator;
@@ -20,10 +21,4 @@ public class MenuManager : MonoBehaviour {
         player.health = 10;
     }
     
-    
-	
-
-
-
-
 }

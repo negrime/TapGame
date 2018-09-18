@@ -33,18 +33,11 @@ public class WordManager : MonoBehaviour
             {
                 Debug.Log("Symvol find "  + letter);
                 activeWord.TypeLetter();
-               
-
             }
             else
             {
-               
                 activeWord.Error();
                 player.HealthDec();
-                
-
-
-
             }
 
         }
@@ -59,11 +52,7 @@ public class WordManager : MonoBehaviour
                     hasActiveWord = true;
                     word.TypeLetter();
                     break;
-                }
-                else
-                {
-                    break;
-                }
+                }  
             }
         }
 
@@ -73,13 +62,15 @@ public class WordManager : MonoBehaviour
             fineshed = true;
             Remove();
         }
+        
     }
 
-   
+
     public void Remove()
     {
-        words.Remove(activeWord);
+        //words.Remove(activeWord);
+        words.Clear();
     }
-   
+
 
 }

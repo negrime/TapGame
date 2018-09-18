@@ -18,6 +18,10 @@ public class Generator : MonoBehaviour
         {
             Generate(ref time);
         }
+        
+        {
+        
+        }
     }
 
     public void Generate(ref float time)
