@@ -39,7 +39,6 @@ public class Move : MonoBehaviour
 		{
 			if (player.isRun)
 			{
-
 				if (!personalSpeed)
 				{
 					speed = player.globalSpeed;

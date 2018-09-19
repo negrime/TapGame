@@ -1,17 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Menu : StateMachineBehaviour {
 
 	Generator generator;
 
 	private Player player;
+
+	private Slider slider;
 	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
 	{
 		generator = FindObjectOfType<Generator>();
 		player = FindObjectOfType<Player>();
+		slider = FindObjectOfType<Slider>();
 	}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -20,10 +24,12 @@ public class Menu : StateMachineBehaviour {
 		if (generator.isGenerate)
 		{
 			animator.SetBool("Menu", false);
+			slider.enabled = false;
 		}
 		else
 		{
 			animator.SetBool("Menu", true);
+			slider.enabled = true;
 		}
 	}
 

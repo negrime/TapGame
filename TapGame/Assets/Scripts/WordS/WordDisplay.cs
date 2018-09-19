@@ -53,7 +53,7 @@ public class WordDisplay : MonoBehaviour {
 		{
 			addScoreTXT = Instantiate(addScoreTXT, transform.position, Quaternion.identity, wordCanvas);
 			addScoreTXT.text = '+' + player.scoreAddValue.ToString();
-			Destroy(addScoreTXT, 0.5f);
+			Destroy(addScoreTXT.gameObject, 0.5f);
 			
 		}
         wm.fineshed = true;

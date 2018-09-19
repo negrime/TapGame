@@ -31,7 +31,7 @@ public class WordManager : MonoBehaviour
 
             if (activeWord.GetNextLetter() == letter)
             {
-                Debug.Log("Symvol find "  + letter);
+                //Debug.Log("Symvol find "  + letter);
                 activeWord.TypeLetter();
             }
             else
@@ -47,7 +47,7 @@ public class WordManager : MonoBehaviour
             {
                 if (word.GetNextLetter() == letter)
                 {
-                    Debug.Log("FIND ACIVE WORD");
+                   // Debug.Log("FIND ACIVE WORD");
                     activeWord = word;
                     hasActiveWord = true;
                     word.TypeLetter();
