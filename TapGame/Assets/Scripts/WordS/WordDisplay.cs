@@ -9,13 +9,16 @@ public class WordDisplay : MonoBehaviour {
 	private Player player;
 	private Generator generator;
 	public Text text;
-	public float fallSpeed = 1f;
+	public Text addScoreTXT;
+	public Transform wordCanvas;
+	//public float fallSpeed = 1f;
 
     private void Start()
     {
         wm = FindObjectOfType<WordManager>();
 	    player = FindObjectOfType<Player>();
 	    generator = FindObjectOfType<Generator>();
+	    wordCanvas = GameObject.Find("Canvas").GetComponent<Transform>();
     }
 
 	private void Update()
@@ -46,6 +49,13 @@ public class WordDisplay : MonoBehaviour {
 
 	public void RemoveWord (int add = 0)
 	{
+		if (add > 0)
+		{
+			addScoreTXT = Instantiate(addScoreTXT, transform.position, Quaternion.identity, wordCanvas);
+			addScoreTXT.text = '+' + player.scoreAddValue.ToString();
+			Destroy(addScoreTXT, 0.5f);
+			
+		}
         wm.fineshed = true;
         wm.hasActiveWord = false;
 		player.scores += add;

@@ -144,6 +144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   maxX: -19
+  up: 0
   personalSpeed: 0
   destroy: 0
   physics: 1
@@ -464,6 +465,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   maxX: 0
+  up: 0
   personalSpeed: 1
   destroy: 0
   physics: 0
@@ -767,6 +769,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   maxX: -17.73
+  up: 0
   personalSpeed: 0
   destroy: 0
   physics: 0
@@ -900,6 +903,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   maxX: 0
+  up: 0
   personalSpeed: 1
   destroy: 0
   physics: 0
@@ -1008,6 +1012,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1.5
   maxX: 0
+  up: 0
   personalSpeed: 1
   destroy: 0
   physics: 0
@@ -1699,6 +1704,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1.5
   maxX: 0
+  up: 0
   personalSpeed: 1
   destroy: 0
   physics: 0
@@ -1774,6 +1780,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   maxX: -17.73
+  up: 0
   personalSpeed: 0
   destroy: 0
   physics: 0
@@ -2039,6 +2046,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2.5
   maxX: 0
+  up: 0
   personalSpeed: 1
   destroy: 0
   physics: 0
@@ -2439,6 +2447,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2.5
   maxX: 0
+  up: 0
   personalSpeed: 1
   destroy: 0
   physics: 0
