@@ -25,7 +25,11 @@ public class Player : MonoBehaviour
     [Header("UI")]
     public Text scoreTxt;
 
+    public Text healthTxt;
+    
     public Text speedTxt;
+    
+    
 
     
     private void Start()
@@ -38,6 +42,8 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        healthTxt.text = "Heath: " + health.ToString();
+
         scoreTxt.text = scores.ToString();
         globalSpeed = speed;
 
@@ -62,6 +68,7 @@ public class Player : MonoBehaviour
     public void HealthDec()
     {
         health--;
+        healthTxt.text = "Heath: " + health.ToString();
         HealthChecker(health);
     }
     
