@@ -9,18 +9,27 @@ public class WordManager : MonoBehaviour
 
     public WordSpawner wordSpawner;
     public Player player;
-
+    
+    
+    private MenuManager menu;
     public bool hasActiveWord;
     public bool fineshed;
     public Word activeWord;
-    //  public WordDisplay display;
+    
+    private  string[] csharpList = {"private", "public", "protected", "void", "while", "if", "else", "const", "new" };
+    private  string[] delphiList = {"begin", "end", "for", "to", "integer"};
+  
+   
 
+    private void Start()
+    {
+        menu = FindObjectOfType<MenuManager>();
+    }
 
     public void AddWord()
     {
-        Word word = new Word(WordGenerator.GetRandomWord(), wordSpawner.SpawnWord());
-       // Debug.Log(word.word);
-
+        Word word = new Word(GetRandomWord(), wordSpawner.SpawnWord());
+        //Debug.Log(gameObject.name);
         words.Add(word);
     }
 
@@ -72,5 +81,27 @@ public class WordManager : MonoBehaviour
         words.Clear();
     }
 
+    public string  GetRandomWord()
+    {
+        string result;
+        int rndIndex;
+        switch (menu.language)
+        {
+            case 1 :
+                rndIndex = Random.Range(0, csharpList.Length);
+                result = csharpList[rndIndex];
+                break;
+            case 2 :
+                rndIndex = Random.Range(0, delphiList.Length);
+                result = delphiList[rndIndex];
+                break;
+            default:
+                return "keks";
+            break;
+                
+                    
+        }
+        return result;
+    }
 
 }
