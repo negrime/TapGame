@@ -28,10 +28,7 @@ public class Player : MonoBehaviour
     public Text healthTxt;
     
     public Text speedTxt;
-    
-    
-
-    
+ 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -43,17 +40,14 @@ public class Player : MonoBehaviour
     void Update()
     {
         healthTxt.text = "Heath: " + health.ToString();
-
         scoreTxt.text = scores.ToString();
         globalSpeed = speed;
-
     }
 
 
     private void OnTriggerEnter2D(Collider2D other)
     {
 
-       
         if (other.CompareTag("Block"))
         {
             //anim.SetInteger("Jump", 4);
@@ -68,8 +62,8 @@ public class Player : MonoBehaviour
     public void HealthDec()
     {
         health--;
-        healthTxt.text = "Heath: " + health.ToString();
         HealthChecker(health);
+        healthTxt.text = "Heath: " + health.ToString();   
     }
     
     private void HealthChecker(int hp)
@@ -78,6 +72,8 @@ public class Player : MonoBehaviour
         {
             Debug.Log("Gameover");
             GameOver();
+            health = 0;
+
         }
     }
 
@@ -87,14 +83,14 @@ public class Player : MonoBehaviour
         generator.isGenerate = false;
         isRun = false;
         globalSpeed = 0;
-        StartCoroutine("PauseLoad");
+        //StartCoroutine("PauseLoad"); Пауза перед перезапуском уровня
+         Application.LoadLevel("SampleScene");
     }
 
     public void SetSpeed(float speed)
     {
         this.speed = speed;
         speedTxt.text = "Speed: " + this.speed.ToString("0");
-
     }
     IEnumerator PauseLoad()
     {
@@ -102,6 +98,10 @@ public class Player : MonoBehaviour
         Application.LoadLevel("SampleScene");
     } 
         
+    public void Stumble()
+    {
+        anim.SetTrigger("STUMBLE");
+    }
         
        
 

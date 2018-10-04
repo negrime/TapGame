@@ -13,7 +13,10 @@ public class WordGenerator : MonoBehaviour
 	private  string[] csharpList = {"private", "public", "protected", "void", "while", "if", "else", "const", "new" };
 	private  string[] delphiList = {"begin", "end", "for", "to", "integer"};
 
-
+	// ЭТО ГОВНО НЕ АКТУАЛЬНО!!!!!!!
+	// ВООБЩЕ!
+	//НЕ СМОТРЕТЬ!
+	
 	/*private void Start()
 	{
 		caze = menu.language;

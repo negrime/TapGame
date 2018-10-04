@@ -16,8 +16,9 @@ public class WordManager : MonoBehaviour
     public bool fineshed;
     public Word activeWord;
     
-    private  string[] csharpList = {"private", "public", "protected", "void", "while", "if", "else", "const", "new" };
+    private  string[] csharpList = {"private", "public", "protected", "void", "while", "if", "else", "const", "new", "var" };
     private  string[] delphiList = {"begin", "end", "for", "to", "integer"};
+    private string[] swiftList = {"let", "func"};
   
    
 
@@ -37,7 +38,6 @@ public class WordManager : MonoBehaviour
     {
         if (hasActiveWord)
         {
-
             if (activeWord.GetNextLetter() == letter)
             {
                 //Debug.Log("Symvol find "  + letter);
@@ -47,8 +47,8 @@ public class WordManager : MonoBehaviour
             {
                 activeWord.Error();
                 player.HealthDec();
+                player.Stumble();
             }
-
         }
         else
         {
@@ -71,13 +71,11 @@ public class WordManager : MonoBehaviour
             fineshed = true;
             Remove();
         }
-        
     }
 
 
     public void Remove()
     {
-        //words.Remove(activeWord);
         words.Clear();
     }
 
@@ -95,13 +93,17 @@ public class WordManager : MonoBehaviour
                 rndIndex = Random.Range(0, delphiList.Length);
                 result = delphiList[rndIndex];
                 break;
+            case 3 :
+                rndIndex = Random.Range(0, swiftList.Length);
+                result = swiftList[rndIndex];
+                break;
+            //case 4 :
+
+                    break;
             default:
                 return "keks";
-            break;
-                
-                    
+            break;        
         }
         return result;
     }
-
 }

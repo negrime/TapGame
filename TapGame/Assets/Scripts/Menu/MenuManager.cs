@@ -17,6 +17,7 @@ public class MenuManager : MonoBehaviour
     private void Start()
     {
         language = 1;
+        languageStr = "C#";
     }
 
     private void Update()
@@ -42,5 +43,11 @@ public class MenuManager : MonoBehaviour
     {
         language = 2; // delphi
         languageStr = "Delphi";
+    }
+
+    public void OnSwiftClick()
+    {
+        language = 3; // swift
+        languageStr = "Swift";
     }
 }
