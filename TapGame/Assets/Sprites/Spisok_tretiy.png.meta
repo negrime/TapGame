@@ -514,12 +514,12 @@ TextureImporter:
       name: Spisok_tretiy_20
       rect:
         serializedVersion: 2
-        x: 301
+        x: 300
         y: 56
         width: 39
         height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.48708716, y: 2.2623196}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

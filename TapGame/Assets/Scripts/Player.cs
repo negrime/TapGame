@@ -61,19 +61,22 @@ public class Player : MonoBehaviour
 
     public void HealthDec()
     {
-        health--;
-        HealthChecker(health);
-        healthTxt.text = "Heath: " + health.ToString();   
+        
+            health--;
+            HealthChecker(health);
+            healthTxt.text = "Heath: " + health.ToString(); 
+        
+          
     }
     
     private void HealthChecker(int hp)
     {
-        if (hp <= 0)
+        if (hp <= 0 && isRun)
         {
             Debug.Log("Gameover");
             GameOver();
             health = 0;
-
+            anim.SetTrigger("Die 0");
         }
     }
 
@@ -83,8 +86,8 @@ public class Player : MonoBehaviour
         generator.isGenerate = false;
         isRun = false;
         globalSpeed = 0;
-        //StartCoroutine("PauseLoad"); Пауза перед перезапуском уровня
-         Application.LoadLevel("SampleScene");
+        StartCoroutine("PauseLoad"); //Пауза перед перезапуском уровня
+         //Application.LoadLevel("SampleScene");
     }
 
     public void SetSpeed(float speed)
@@ -100,7 +103,10 @@ public class Player : MonoBehaviour
         
     public void Stumble()
     {
-        anim.SetTrigger("STUMBLE");
+        if (health >= 1)
+        {
+            anim.SetTrigger("STUMBLE");
+        }
     }
         
        
