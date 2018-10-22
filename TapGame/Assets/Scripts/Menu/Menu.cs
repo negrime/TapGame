@@ -26,11 +26,11 @@ public class Menu : StateMachineBehaviour {
 			animator.SetBool("Menu", false);
 			slider.enabled = false;
 		}
-		else
+		/*else
 		{
 			animator.SetBool("Menu", true);
 			slider.enabled = true;
-		}
+		} */
 	}
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state

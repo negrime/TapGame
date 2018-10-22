@@ -47,7 +47,6 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-
         if (other.CompareTag("Block"))
         {
             //anim.SetInteger("Jump", 4);
@@ -61,12 +60,10 @@ public class Player : MonoBehaviour
 
     public void HealthDec()
     {
-        
+            if (health > 0)
             health--;
             HealthChecker(health);
-            healthTxt.text = "Heath: " + health.ToString(); 
-        
-          
+            healthTxt.text = "Heath: " + health.ToString();          
     }
     
     private void HealthChecker(int hp)

@@ -18,7 +18,7 @@ public class WordManager : MonoBehaviour
     
     private  string[] csharpList = {"private", "public", "protected", "void", "while", "if", "else", "const", "new", "var" };
     private  string[] delphiList = {"begin", "end", "for", "to", "integer"};
-    private string[] swiftList = {"let", "func"};
+    private string[] swiftList = {"let", "func", "print()", "double", "float", "bool", "character", "string"};
   
    
 
